@@ -107,13 +107,13 @@ def generate_csv(images_data_dict: dict, csv_file_fp: object):
         boxes: list = images_data_dict[image].get("Bounding_Boxes")
         if boxes is None:
             if images_data_dict[image].get("GPS"):
-                csv_writer.writerow([image, "", "",
+                csv_writer.writerow([image, 0, "",
                                      images_data_dict[image]["GPS"].get("Longitude", ""),
                                      images_data_dict[image]["GPS"].get("Latitude", ""),
                                      images_data_dict[image]["GPS"].get("Altitude", "")
                                      ])
             else:
-                csv_writer.writerow([image, "", "", "", "", ""])
+                csv_writer.writerow([image,0, "", "", "", ""])
         else:
             box_id = 1
             if images_data_dict[image].get("GPS"):
