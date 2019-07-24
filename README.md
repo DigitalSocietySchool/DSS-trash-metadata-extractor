@@ -94,7 +94,7 @@ with open("bounding_boxes.json", 'w') as outfile:
     outfile.write(json.dumps(bounding_boxes))
 ```
 
-####III. Process your images
+#### III. Process your images
 Replace the images in the directory `wcd-ai/Trash_Detection/images` by the ones you want to process and press the button __"restart the kernel, then re-run the whole notebook (with dialog)"__.
 
 Copy the file ``wcd-ai/Trash_Detection/bounding_boxes.json`` where you want. It is the file to use with the metadata extractor.
@@ -109,6 +109,6 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## License
 
-This project is licensed under the GNU GPLv3 License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU GPLv3 License - see the [LICENSE](LICENSE) file for details
 
 
